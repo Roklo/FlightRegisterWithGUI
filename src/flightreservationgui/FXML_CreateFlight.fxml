@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flightreservationgui.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="1206.0" fitWidth="1936.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Gradient_background.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0">
+         <children>
+            <BorderPane prefHeight="800.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../Images/Main_center.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane layoutX="395.0" layoutY="72.0" prefHeight="650.0" prefWidth="490.0">
+               <bottom>
+                  <VBox alignment="CENTER" maxWidth="480.0" prefHeight="33.0" prefWidth="480.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fill="#000000ad" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2007-2017 LuxuryFlights.com a Luxury Air production and Royal Air award winner." textAlignment="CENTER">
+                           <font>
+                              <Font name="Segoe UI Light" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </bottom>
+               <center>
+                  <BorderPane prefHeight="617.0" prefWidth="387.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="495.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <BorderPane prefHeight="59.0" prefWidth="484.0">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <left>
+                                    <Button fx:id="backButton" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.79" BorderPane.alignment="CENTER">
+                                       <graphic>
+                                          <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Images/back_arrow_plain.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <BorderPane.margin>
+                                          <Insets left="10.0" />
+                                       </BorderPane.margin>
+                                    </Button>
+                                 </left>
+                                 <right>
+                                    <Button disable="true" mnemonicParsing="false" opacity="0.0" BorderPane.alignment="CENTER">
+                                       <graphic>
+                                          <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../GUI/Luxury%20Flight/back_arrow.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <BorderPane.margin>
+                                          <Insets right="10.0" />
+                                       </BorderPane.margin>
+                                    </Button>
+                                 </right>
+                                 <center>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Text fill="#000000c7" strokeType="OUTSIDE" strokeWidth="0.0" text="CREATE FLIGHT" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Segoe UI Light" size="15.0" />
+                                             </font>
+                                          </Text>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Images/line_darker.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </VBox>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </HBox>
+                     </top>
+                     <center>
+                        <VBox alignment="CENTER" prefHeight="555.0" prefWidth="896.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <GridPane prefHeight="456.0" prefWidth="490.0">
+                                <columnConstraints>
+                                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TextField fx:id="flightID" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Flight ID (e.g. SK4431)" GridPane.columnSpan="2">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <ComboBox fx:id="pilotsComboBox" maxHeight="-Infinity" maxWidth="-Infinity" onShown="#fillComboBoxes" prefHeight="20.0" prefWidth="140.0" promptText="Select Pilot" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <ComboBox fx:id="copilotComboBox" maxHeight="-Infinity" maxWidth="-Infinity" onShown="#fillComboBoxes" prefHeight="20.0" prefWidth="140.0" promptText="Select Copilot" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <ComboBox fx:id="crew1ComboBox" maxHeight="-Infinity" maxWidth="-Infinity" onShown="#fillComboBoxes" prefHeight="20.0" prefWidth="140.0" promptText="Select Crew 1" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="crew2ComboBox" maxHeight="-Infinity" maxWidth="-Infinity" onShown="#fillComboBoxes" prefHeight="20.0" prefWidth="140.0" promptText="Select Crew 2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <TextField fx:id="rows" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Rows of seats" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="columns" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Seats per row" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="departure" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Departure (e.g. AES)" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="departureHour" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Departure Hour (0-23)" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="departureMin" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Departure Minute (0-59)" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="departureDay" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Departure Day (1-31)" GridPane.rowIndex="8">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="departureMonth" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Departure Month (1-12)" GridPane.rowIndex="9">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="departureYear" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Departure Year" GridPane.rowIndex="10">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="destination" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Destination (e.g. OSL)" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="arrivalHour" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Arrival Hour (0-23)" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="arrivalMin" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Arrival Minute (0-59)" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="arrivalDay" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Arrival Day" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="arrivalMonth" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Arrival Month (1-12)" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="arrivalYear" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="140.0" promptText="Arrival Year" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </GridPane>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="40.0" />
+                           </padding>
+                        </VBox>
+                     </center>
+                     <bottom>
+                        <Button fx:id="newFlightButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#newFlightAction" prefHeight="40.0" prefWidth="100.0" text="Create" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Segoe UI Light" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="20.0" />
+                           </BorderPane.margin>
+                        </Button>
+                     </bottom>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
